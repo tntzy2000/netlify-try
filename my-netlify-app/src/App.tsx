@@ -6,7 +6,7 @@ function App() {
   const [buttonText, setButtonText] = useState('Click me!');
   
   const handleButtonClick = () => {
-    const newCount = clickCount + 1;
+    const newCount = clickCount + 2;  // Increment by 2 instead of 1
     setClickCount(newCount);
     
     // Change button text based on click count
@@ -20,10 +20,15 @@ function App() {
       'Unstoppable!',
       'Phenomenal!',
       'Fantastic!',
-      'Outstanding!'
+      'Outstanding!',
+      'Terrific!',
+      'Excellent!',
+      'Marvelous!',
+      'Splendid!',
+      'Wonderful!'
     ];
     
-    setButtonText(texts[newCount % texts.length]);
+    setButtonText(texts[Math.floor(newCount / 2) % texts.length]);  // Adjust index for incrementing by 2
   };
 
   return (
