@@ -1,0 +1,1 @@
+1. Execution Strategy: Advance end-to-end automatically (skeleton ➜ features ➜ testing ➜ finalization), pausing to ask questions only in case of major uncertainties.
